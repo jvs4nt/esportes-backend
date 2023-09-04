@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backend:
+    container_name: esportes_backend
+    build:
+      context: ./
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    ports:
+      - "8009:80"
